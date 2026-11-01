@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="IELTS Master 全真模考计时">
     <title>Mock Test - IELTS Master</title>
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -11,7 +10,6 @@
 
 <header>
     <a href="../index.html" class="logo">IELTS Master</a>
-    
     <nav aria-label="Main navigation">
         <a href="../index.html" data-i18n="home">Home</a>
         <a href="courses.html" data-i18n="courses">Courses</a>
@@ -22,7 +20,6 @@
         <a href="speaking.html" data-i18n="speaking">Speaking</a>
         <a href="login.html" data-i18n="login">Login</a>
     </nav>
-    
     <button id="languageBtn" type="button" aria-label="Switch language">中文</button>
 </header>
 
@@ -35,39 +32,28 @@
         </p>
 
         <div class="mock-options">
-            <button type="button" class="mock-option" data-minutes="40" data-name="Listening">
+            <!-- 注意：这里的按钮去掉了 data-minutes，现在点击直接跳转到对应页面 -->
+            <button type="button" class="mock-option" onclick="window.location.href='listening.html?mode=mock&subject=listening'">
                 <h3 data-i18n="listening">Listening</h3>
                 <p>40 minutes</p>
             </button>
-            <button type="button" class="mock-option" data-minutes="60" data-name="Reading">
+            <button type="button" class="mock-option" onclick="window.location.href='reading.html?mode=mock&subject=reading'">
                 <h3 data-i18n="reading">Reading</h3>
                 <p>60 minutes</p>
             </button>
-            <button type="button" class="mock-option" data-minutes="60" data-name="Writing">
+            <button type="button" class="mock-option" onclick="alert('写作模考暂未开放，请前往 Writing 页面自由练习。')">
                 <h3 data-i18n="writing">Writing</h3>
                 <p>60 minutes</p>
             </button>
-            <button type="button" class="mock-option" data-minutes="14" data-name="Speaking">
+            <button type="button" class="mock-option" onclick="alert('口语模考暂未开放，请前往 Speaking 页面自由练习。')">
                 <h3 data-i18n="speaking">Speaking</h3>
                 <p>11–14 minutes</p>
             </button>
         </div>
     </section>
-
-    <section id="mockTimer" style="display:none;">
-        <h1 id="timerTitle">Test</h1>
-        <div class="timer-display" id="timerDisplay">00:00</div>
-        <div class="timer-controls">
-            <button type="button" id="timerStartPause" class="primary-btn" data-i18n="timerStart">Start</button>
-            <button type="button" id="timerReset" class="secondary-btn" data-i18n="timerReset">Reset</button>
-        </div>
-        <p id="timerMessage"></p>
-        <button type="button" id="timerBack" class="secondary-btn" style="display:block;margin:25px auto 0;" data-i18n="timerBack">
-            Change Test
-        </button>
-    </section>
 </main>
 
+<script src="../data.js"></script>
 <script src="../script.js"></script>
 </body>
 </html>
