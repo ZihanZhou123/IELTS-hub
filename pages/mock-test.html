@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IELTS Master 全真模考计时">
+    <title>Mock Test - IELTS Master</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <a href="../index.html" class="logo">IELTS Master</a>
+    
+    <nav aria-label="Main navigation">
+        <a href="../index.html" data-i18n="home">Home</a>
+        <a href="courses.html" data-i18n="courses">Courses</a>
+        <a href="reading.html" data-i18n="reading">Reading</a>
+        <a href="listening.html" data-i18n="listening">Listening</a>
+        <a href="intensive-listening.html" data-i18n="intensive">Intensive</a>
+        <a href="writing.html" data-i18n="writing">Writing</a>
+        <a href="speaking.html" data-i18n="speaking">Speaking</a>
+        <a href="login.html" data-i18n="login">Login</a>
+    </nav>
+    
+    <button id="languageBtn" type="button" aria-label="Switch language">中文</button>
+</header>
+
+<main class="lesson-container">
+    <section id="mockSelect">
+        <p class="tagline" data-i18n="academicTagline">IELTS ACADEMIC TRAINING</p>
+        <h1 data-i18n="chooseTest">Choose a Practice Test</h1>
+        <p class="description" data-i18n="chooseTestDesc">
+            Time yourself under real exam conditions.
+        </p>
+
+        <div class="mock-options">
+            <button type="button" class="mock-option" data-minutes="40" data-name="Listening">
+                <h3 data-i18n="listening">Listening</h3>
+                <p>40 minutes</p>
+            </button>
+            <button type="button" class="mock-option" data-minutes="60" data-name="Reading">
+                <h3 data-i18n="reading">Reading</h3>
+                <p>60 minutes</p>
+            </button>
+            <button type="button" class="mock-option" data-minutes="60" data-name="Writing">
+                <h3 data-i18n="writing">Writing</h3>
+                <p>60 minutes</p>
+            </button>
+            <button type="button" class="mock-option" data-minutes="14" data-name="Speaking">
+                <h3 data-i18n="speaking">Speaking</h3>
+                <p>11–14 minutes</p>
+            </button>
+        </div>
+    </section>
+
+    <section id="mockTimer" style="display:none;">
+        <h1 id="timerTitle">Test</h1>
+        <div class="timer-display" id="timerDisplay">00:00</div>
+        <div class="timer-controls">
+            <button type="button" id="timerStartPause" class="primary-btn" data-i18n="timerStart">Start</button>
+            <button type="button" id="timerReset" class="secondary-btn" data-i18n="timerReset">Reset</button>
+        </div>
+        <p id="timerMessage"></p>
+        <button type="button" id="timerBack" class="secondary-btn" style="display:block;margin:25px auto 0;" data-i18n="timerBack">
+            Change Test
+        </button>
+    </section>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

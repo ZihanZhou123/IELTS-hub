@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IELTS Master 阅读练习">
+    <title>IELTS Reading - IELTS Master</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+    <a href="../index.html" class="logo">IELTS Master</a>
+    
+    <nav aria-label="Main navigation">
+        <a href="../index.html" data-i18n="home">Home</a>
+        <a href="courses.html" data-i18n="courses">Courses</a>
+        <a href="reading.html" data-i18n="reading">Reading</a>
+        <a href="listening.html" data-i18n="listening">Listening</a>
+        <a href="intensive-listening.html" data-i18n="intensive">Intensive</a>
+        <a href="writing.html" data-i18n="writing">Writing</a>
+        <a href="speaking.html" data-i18n="speaking">Speaking</a>
+        <a href="login.html" data-i18n="login">Login</a>
+    </nav>
+    
+    <button id="languageBtn" type="button" aria-label="Switch language">中文</button>
+</header>
+
+<main class="lesson-container">
+    <p class="tagline" data-i18n="academicTagline">IELTS ACADEMIC TRAINING</p>
+    <h1>Reading Practice</h1>
+    <p class="description" data-i18n="lessonReadingDesc">
+        Improve your reading comprehension and vocabulary.
+    </p>
+
+    <section class="lesson-card">
+        <h2>Practice Passage 1</h2>
+        <p><strong>Topic: The Importance of Urban Green Spaces</strong></p>
+        <p>
+            Urban green spaces, including parks and gardens, play an important role in modern cities. They provide
+            residents with places to relax, exercise and connect with nature. Research has also suggested that green
+            spaces can improve air quality and support biodiversity.
+        </p>
+        <hr>
+        <h3>Question 1</h3>
+        <p>Why are urban green spaces important?</p>
+
+        <label class="answer-option">
+            <input type="radio" name="readingAnswer" value="A"> A. They increase traffic.
+        </label>
+        <label class="answer-option">
+            <input type="radio" name="readingAnswer" value="B"> B. They improve people's health and well-being.
+        </label>
+        <label class="answer-option">
+            <input type="radio" name="readingAnswer" value="C"> C. They reduce the number of buildings.
+        </label>
+        <label class="answer-option">
+            <input type="radio" name="readingAnswer" value="D"> D. They increase pollution.
+        </label>
+
+        <button type="button" class="primary-btn" onclick="checkReadingAnswer()">Check Answer</button>
+        <p id="readingResult"></p>
+    </section>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>
